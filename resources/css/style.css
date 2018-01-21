@@ -82,14 +82,18 @@ nav span {
 
 #gallery .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .image {
   height: 8rem;
-  width: 8rem;
-  padding: 3rem 0;
+  width: 5rem;
+  margin: 3rem 2.7rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .image.paper img {
@@ -97,11 +101,11 @@ nav span {
 }
 
 .image.ruler img {
-  width: 5rem;
+  width: 4.7rem;
 }
 
 .image.truck img {
-  width: 5rem;
+  width: 4.7rem;
 }
 
 #info {
@@ -112,20 +116,19 @@ nav span {
 
 #info .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .box {
   width: 35%;
-  margin: 0 5%;
-  margin-bottom: 5rem;
+  margin: 0 5% 5rem 5%;
 }
 
 .box .blue {
   font-size: 1rem;
   font-weight: bold;
   width: 10rem;
-  padding: 1.25rem 0.5rem;
+  padding: 0.5rem 1.25rem;
 }
 
 footer {
