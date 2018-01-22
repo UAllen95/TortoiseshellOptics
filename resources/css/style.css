@@ -56,6 +56,10 @@ nav span {
   padding: 1rem 2rem 1rem 0;
 }
 
+.hidden {
+  display: none;
+}
+
 #box {
   width: 100%;
   display: flex;
@@ -86,12 +90,13 @@ nav span {
 #gallery .container {
   display: flex;
   justify-content: center;
+  margin: 3rem 0;
 }
 
 .image {
   height: 8rem;
   width: 5rem;
-  margin: 3rem 2.7rem;
+  margin: 0 2.7rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -172,5 +177,72 @@ footer .container img {
 
   .container h3 {
     padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 0.77rem;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  #banner {
+    height: 17rem;
+  }
+
+  #box .container {
+    top: 9rem;
+    margin-right: 0rem;
+  }
+
+  .container h3 {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  #gallery .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+
+  .image.ruler {
+    margin: 1.54rem 0;
+  }
+
+  #info .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box .blue {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
   }
 }
